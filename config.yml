@@ -1,0 +1,43 @@
+baseURL: "https://<your-username>.github.io/<your-repo>/"
+title: "Sermons"
+theme: "hugo-book"
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: "Sermons"
+    weight: 1
+    params:
+      externalHomepageURL: "https://your-homepage.example.com"  # replace with your real homepage
+  te:
+    languageName: "తెలుగు"
+    weight: 2
+    params:
+      externalHomepageURL: "https://your-homepage.example.com"  # replace
+
+params:
+  BookSection: docs
+  BookSearch: true
+  BookToC: true
+  BookRepo: "https://github.com/<your-username>/<your-repo>"
+  customCSS: ["css/custom.css"]
+
+menu:
+  main:
+    - name: Home
+      url: https://your-homepage.example.com     # <-- replace with your real homepage URL
+      weight: 0
+    - name: Sermons
+      url: /
+      weight: 1
+    - name: Search
+      url: /search/
+      weight: 2
+
+outputs:
+  home: ["HTML", "RSS", "JSON"]
+  section: ["HTML", "RSS"]
+  page: ["HTML"]
+  taxonomy: ["HTML"]
+  taxonomyTerm: ["HTML"]
