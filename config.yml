@@ -1,8 +1,8 @@
-baseURL: "https://<your-username>.github.io/<your-repo>/"
+baseURL: "https://wryteright.github.io/sermons-docs/"
 title: "Sermons"
 theme: "hugo-book"
 defaultContentLanguage: en
-defaultContentLanguageInSubdir: true
+defaultContentLanguageInSubdir: false
 
 languages:
   en:
